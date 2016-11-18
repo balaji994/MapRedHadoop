@@ -30,26 +30,22 @@ For instance in the WordCountMapper the input to the map method is a key-value p
 
 The pseudo code for the map function is below
 
-void map(file, text) {
+	void map(file, text) {
 	     foreach word in text.split() {
 	            output(word, 1);
-    }
-    }
+   		 }
+   	 }
 
 
 
 
 The actual java code for the map function is below
 
-public static class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
-
-	 
+    public static class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
 
 	        private final static IntWritable one = new IntWritable(1);
 
 	        private Text word = new Text();
-
-	 
 
 	        public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
 
@@ -74,7 +70,7 @@ The WordCountReducer class is created by extending the org.apache.hadoop.mapredu
 
 The pseudo code for the reducer function is below 
 
-void reduce(word, list(count)) {
+	void reduce(word, list(count)) {
 
 	       output(word, sum(count));
 
@@ -82,11 +78,9 @@ void reduce(word, list(count)) {
 
 The actual java code for the reducer function is below.
 
-public static class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
+	public static class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
 	        private IntWritable result = new IntWritable();
-
-	 
 
 	        public void reduce(Text key, Iterable<IntWritable> values, Context context)
 
@@ -125,3 +119,12 @@ The main method sets up all necessary configurations and runs the mapreduce job.
 
 
 Thanks in advance 
+
+
+
+
+
+
+
+
+
