@@ -9,8 +9,7 @@ This Repository got two class mainly WordCount and the SentimentalAnalysis(simpl
      1. Java 1.8,
      2. Hadoop 1.2.1 (Single Node Cluster)
      3. Flume 1.7 (For SentimentalAnalysis not for WordCount) Used to get Twitter data on HDFS
-     4. Java IDE(Intellij)
-I have also uploaded the hadoop and flume repositories  
+     4. Java IDE(Intellij) 
 #Word Count
 Word Count is a simple and easy to understand algorithm which can be implemented as a mapreduce application easily. Given a set of text documents the program counts the number of occurrences of each word. The algorithm consists of three main sections.
 
