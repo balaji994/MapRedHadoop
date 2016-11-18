@@ -5,8 +5,11 @@ This Repository got two class mainly WordCount and the SentimentalAnalysis(simpl
       It takes the text file as an input and counts all the words individually in it and prints to an output folder with Unix executable 
       file named as "part-r-0000". It needs Hadoop 1.2.1 Single node Cluster  
 
-#Requirements To Run:
+# Requirements To Run:
      1. Java 1.8,
      2. Hadoop 1.2.1 (Single Node Cluster)
-     3. Flume 1.7,(For SentimentalAnalysis not for WordCount)
-     4. 
+     3. Flume 1.7 (For SentimentalAnalysis not for WordCount) Used to get Twitter data on HDFS
+I have also uploaded the hadoop and flume repositories that I have used
+Any error please share I can help you to resolve them 
+
+Thanks in advance 
