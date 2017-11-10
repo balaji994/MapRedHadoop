@@ -117,8 +117,6 @@ The main method sets up all necessary configurations and runs the mapreduce job.
   8. File Output Path
 
 
-Statistical Analysis documentation will be updated soon.
-Thanks in advance 
 
 
 
